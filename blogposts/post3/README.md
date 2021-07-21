@@ -17,7 +17,7 @@ The goal of this post is to dive deep into the data and characterize the comment
 ---
 ## <a id="reminder"></a>Reminder about sampling
 
-In the last blog post I described [the sampling plan](https://douglas-r-rice.github.io/jobs/2021/02/28/2-jobs.html#plan). Below is a visual summary (not to scale). The pie chart summarizes some of the findings to be described later in this post. Note a few things:
+In the last blog post I described [the sampling plan](https://github.com/willjobs/public-comments-project/tree/main/blogposts/post2#the-plans). Below is a visual summary (not to scale). The pie chart summarizes some of the findings to be described later in this post. Note a few things:
 
 * The sampling scheme starts at the "document" level (i.e., the item posted by the government on which the public can comment) before collecting comments. This was to ensure I had multiple comments from each document, rather than many documents each with only one comment.
 * The selection of 250 documents per month (second row) and 250 comments per document (fourth row) are due to the design of the API. I could retrieve a maximum of 250 items with a single request, so it was convenient to select exactly 250.
@@ -219,7 +219,7 @@ Because the corpora used to generate these word clouds encompass documents submi
 ---
 ## <a id="trade-war"></a>Bonus: trade war!
 
-In the last post [I mentioned](https://douglas-r-rice.github.io/jobs/2021/02/28/2-jobs.html#observations) that if you plot the number of documents by year from 2010-2019 and group the documents by document type you can see a marked increase in the total number of documents in 2018-2019 entirely driven by an increase in the "Other" document type category. At the time I had no explanation but was curious so I downloaded the header information for all 361,457 documents with the "Other" document type from 2010-2020. The first thing I did with this dataset was to group it by "subtype" (an optional field that agencies can use to further categorize a document) and year, resulting in the following visualization:
+In the last post [I mentioned](https://github.com/willjobs/public-comments-project/tree/main/blogposts/post2#observations) that if you plot the number of documents by year from 2010-2019 and group the documents by document type you can see a marked increase in the total number of documents in 2018-2019 entirely driven by an increase in the "Other" document type category. At the time I had no explanation but was curious so I downloaded the header information for all 361,457 documents with the "Other" document type from 2010-2020. The first thing I did with this dataset was to group it by "subtype" (an optional field that agencies can use to further categorize a document) and year, resulting in the following visualization:
 
 ![document subtypes by year](images/jobs-03-100-other_subtypes_by_year.png)
 
